@@ -24,7 +24,7 @@ public:
 
 		return in;
 	}
-
+/*
 	int countOf(T val) {
 		int count = 0;
 		for (auto i : this->getList()) {
@@ -33,6 +33,17 @@ public:
 			}
 		}
 		return count;
+	}*/
+
+		int s = 0, t = 0;
+	int countOf_start_to(T val, int s, int t) {
+		int count_s_t = 0;
+		for (int i = s; i <= t; i++) {
+			if (val == i) {
+				count_s_t++;
+			}
+		}
+		return count_s_t;
 	}
 
 	~MyList_Decor(){}

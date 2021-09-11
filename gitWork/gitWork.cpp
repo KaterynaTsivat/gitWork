@@ -33,5 +33,6 @@ int main()
 	std::cout << ml.isHasOdd() << "\n";
 
 	// std::cin >> ml;
-	std::cout << ml.countOf(1);
+	//std::cout << ml.countOf(1);
+	std::cout << "\n\t countOf start to"<< ml.countOf_start_to(2, 3, 4);
 }
