@@ -25,6 +25,16 @@ public:
 		return in;
 	}
 
+	int countOf(T val) {
+		int count = 0;
+		for (auto i : this->getList()) {
+			if (val == i) {
+				count++;
+			}
+		}
+		return count;
+	}
+
 	~MyList_Decor(){}
 };
 
