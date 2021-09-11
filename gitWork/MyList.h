@@ -31,6 +31,10 @@ public:
 		return std::accumulate(this->list.begin(), this->list.end(), start_index);
 	}
 
+	T mult() {
+		return std::accumulate(this->list.begin(), this->list.end(), 1, std::multiplies<int>());
+	}
+
 	bool isHasOdd() {
 		bool isOdd = false;
 		for (auto i : this->getList()) {
